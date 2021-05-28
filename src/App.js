@@ -1,19 +1,18 @@
-import React from "react";
-import BlogInformation from "./BlogInformation";
-import myHOCFunction from "./myHOCFunction";
+import React, { useState } from 'react'
 
+import FormComponent from './FormComponent'
 
-import "./styles.css";
+import FormikTagComponent from './FormikTagComponent'
 
-export default function App() {
-  return (
-    <div className="App">
-      <BlogInformation author="Adhithi" article="React Guide" />
-      <myHOCFunction />
-      
-      
-    </div>
-    
-    
-  );
+function App() {
+    return (
+        <div>
+            {/* <ClickComponent count={count} incrementCount={incrementCount} />
+            <HoverComponent count={count} incrementCount={incrementCount} /> */}
+            {/* <FormComponent /> */}
+            <FormikTagComponent />
+        </div>
+    )
 }
+
+export default App
